@@ -34,7 +34,7 @@ public class DBUtils {
         }
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle(title);
-        stage.setScene(new Scene(root)); //revisar esto
+        stage.setScene(new Scene(root)); //Revisar esto, el ancho y largo faltan
         stage.show();
     }
 
@@ -57,7 +57,7 @@ public class DBUtils {
                 alert.setContentText("You cannot use this username");
                 alert.show();
             } else {
-                psInsert = connection.prepareStatement("INSERT INTO users (username, password, VALUES (?, ?)");
+                psInsert = connection.prepareStatement("INSERT INTO users (username, password) VALUES (?, ?)");
                 psInsert.setString(1, username);
                 psInsert.setString(2, password);
                 psInsert.executeUpdate();
