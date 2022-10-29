@@ -102,7 +102,7 @@ public class DBUtils {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx-video", "root", "ESTO NO.");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx-video", "root", "Love2997.");
             preparedStatement = connection.prepareStatement("SELECT password FROM users WHERE username * ?");
             resultSet = preparedStatement.executeQuery();
 
