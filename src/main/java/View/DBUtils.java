@@ -1,5 +1,10 @@
 package View;
 
+//INTENTANDO RESOLVER
+//java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/javafx-video
+//java sql esta importada
+//jdbc ja listo
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -43,6 +48,7 @@ public class DBUtils {
         PreparedStatement psInsert = null;
         PreparedStatement psCheckUserExists = null;
         ResultSet resultSet = null;
+
 
 
         try {
