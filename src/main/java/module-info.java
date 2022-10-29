@@ -1,4 +1,4 @@
-module com.example.Controller {
+module java {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
